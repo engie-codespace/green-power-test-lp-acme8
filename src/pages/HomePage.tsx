@@ -5,7 +5,59 @@ import Hero from '../components/Hero';
 const HomePage: React.FC = () => {
   return (
     <div>
-      <Hero />
+
+      {/* Hero Call to Action Section */}
+      <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">The Power is in your hands</h1>
+          <p className="text-xl mb-8 text-gray-100 max-w-2xl mx-auto">
+            Compare, simulate, and choose the most suitable energy offer based on your real consumption. Save money and power your home or business with confidence!
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/compare" className="bg-accent text-white font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-500 transition-colors text-lg">
+              Start My Simulation
+            </Link>
+            <Link to="/offers" className="bg-white text-primary font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition-colors text-lg">
+              View All Offers
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-16 bg-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-dark">How It Works</h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+              In just a few steps, discover the best energy contract for your needs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
+              <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">1. Enter Your Consumption</h3>
+              <p className="text-gray-600">Provide your actual or estimated energy usage for a personalized comparison.</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
+              <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h4" /></svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">2. Compare Offers</h3>
+              <p className="text-gray-600">See the best deals from top providers, tailored to your consumption profile.</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-md text-center">
+              <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4">3. Choose & Save</h3>
+              <p className="text-gray-600">Select your contract and start saving instantly—no hidden fees, no hassle.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Our Services Section */}
       <section className="py-16 bg-light">
