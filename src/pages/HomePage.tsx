@@ -35,7 +35,11 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                {/* Profile icon for profile selection */}
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A9 9 0 1112 21a9 9 0 01-6.879-3.196z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
               </div>
               <h3 className="text-xl font-semibold mb-4">1. Choose your profile</h3>
               <ul className="text-left text-gray-600 list-disc list-inside mb-4">
@@ -46,14 +50,20 @@ const HomePage: React.FC = () => {
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h4" /></svg>
+                {/* Chart/Trending Up icon for price/forecast */}
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 17l6-6 4 4 8-8" />
+                </svg>
               </div>
               <h3 className="text-xl font-semibold mb-4">2. See your price</h3>
               <p className="text-gray-600">Our AI forecasts your coonsumption and market price for you.</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                {/* Shield/Check icon for trust/safety */}
+                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2m4-8v6a9 9 0 11-18 0V6a9 9 0 0118 0z" />
+                </svg>
               </div>
               <h3 className="text-xl font-semibold mb-4">3. Trust us</h3>
               <p className="text-gray-600">We will always choose the best provider for you.</p>
