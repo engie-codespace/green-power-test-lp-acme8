@@ -37,22 +37,26 @@ const HomePage: React.FC = () => {
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">1. Enter Your Consumption</h3>
-              <p className="text-gray-600">Provide your actual or estimated energy usage for a personalized comparison.</p>
+              <h3 className="text-xl font-semibold mb-4">1. Choose your profile</h3>
+              <ul className="text-left text-gray-600 list-disc list-inside mb-4">
+                <li>Auto: Switch between providers</li>
+                <li>Manual: Choose a single provider</li>
+                <li>AI: Create your own AI agent</li>
+              </ul>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h4" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">2. Compare Offers</h3>
-              <p className="text-gray-600">See the best deals from top providers, tailored to your consumption profile.</p>
+              <h3 className="text-xl font-semibold mb-4">2. See your price</h3>
+              <p className="text-gray-600">Our AI forecasts your coonsumption and market price for you.</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="h-14 w-14 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4">3. Choose & Save</h3>
-              <p className="text-gray-600">Select your contract and start saving instantly—no hidden fees, no hassle.</p>
+              <h3 className="text-xl font-semibold mb-4">3. Trust us</h3>
+              <p className="text-gray-600">We will always choose the best provider for you.</p>
             </div>
           </div>
         </div>
